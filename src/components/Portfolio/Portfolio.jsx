@@ -9,7 +9,7 @@ const Portfolio = () => {
         section className = "portfolio" >
 
         <
-        h1 className = "heading" > Nos activités < /h1>
+        h1 className = "heading" >Nos activités < /h1>
 
         <
         div className = "box-container" >
