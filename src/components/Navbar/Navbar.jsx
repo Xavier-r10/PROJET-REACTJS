@@ -14,6 +14,9 @@ const Navbarmenu = () => {
         setResponsiveclose(isResponsiveclose === false ? true : false);
     };
 
+    let tokken = ''
+    localStorage.setItem('tokken', tokken)
+
 
     let boxClass = ["main-menu menu-right menuq1"];
 
@@ -75,7 +78,7 @@ const Navbarmenu = () => {
         <
         div className = "container22" >
         <
-        div className = "row" >
+        div className = "row1" >
 
         { /* Add Logo  */ } <
         div className = "header__middle__logo" >
@@ -124,19 +127,47 @@ const Navbarmenu = () => {
         onClick = { toggleClass }
         to = { `/` } > Accueil < /NavLink> </li >
 
-        <
+        {localStorage.getItem('tokken').length===0 &&<
         li className = "menu-item" >
         <
         NavLink exact activeClassName = 'is-active'
         onClick = { toggleClass }
-        to = { `/registration` } > Inscription < /NavLink> </li >
+        to = { `/registration` } > Inscription < /NavLink> </li >}
 
+        {localStorage.getItem('tokken').length!==0 &&<
+        li className = "menu-item" >
         <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/paiement` } > Paiement < /NavLink> </li >}
+        {localStorage.getItem('tokken').length!==0 &&<
+        li className = "menu-item" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/teledeclaration` } > Télédéclaration < /NavLink> </li >}
+
+        {localStorage.getItem('tokken').length!==0 &&<
+        li className = "menu-item" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/compte` } > Gérer mon compte < /NavLink> </li >}
+
+
+        {localStorage.getItem('tokken').length===0?<
         li className = "menu-item" >
         <
         NavLink exact activeClassName = 'is-active'
         onClick = { toggleClass }
         to = { `/login` } > Se connecter < /NavLink> </li >
+            :
+        <
+        li className = "menu-item" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/logout` } > Se déconnecter < /NavLink> </li >}
         <
         /ul>  <
         /nav >  <

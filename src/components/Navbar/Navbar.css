@@ -10,7 +10,7 @@
   background: linear-gradient(135deg, orange 60%, cyan);
 }*/
 
-.row {
+.container22 .row1 {
     display: flex!important;
     justify-content: space-around;
 }
