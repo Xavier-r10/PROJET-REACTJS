@@ -19,8 +19,7 @@ const Navbarmenu = () => {
 
     if (isMenu) {
         boxClass.push('menuq2');
-    }
-    else {
+    } else {
         boxClass.push('');
     }
 
@@ -50,77 +49,102 @@ const Navbarmenu = () => {
 
     if (isMenuSubMenu) {
         boxClassSubMenu.push('sub__menus__Active');
-    }
-    else if (!isMenuSubMenu) {
+    } else if (!isMenuSubMenu) {
         boxClassSubMenu.push('');
     }
     if (isMenuSubMenu1) {
         boxClassSubMenu1.push('sub__menus__Active');
-    }
-    else if (!isMenuSubMenu1) {
+    } else if (!isMenuSubMenu1) {
         boxClassSubMenu1.push('');
     }
     if (isMenuSubMenu2) {
         boxClassSubMenu2.push('sub__menus__Active');
-    }
-    else if (!isMenuSubMenu2) {
+    } else if (!isMenuSubMenu2) {
         boxClassSubMenu2.push('');
     }
     if (isMenuSubMenu3) {
         boxClassSubMenu3.push('sub__menus__Active');
-    }
-    else if (!isMenuSubMenu3) {
+    } else if (!isMenuSubMenu3) {
         boxClassSubMenu3.push('');
     }
 
-    return (
-        <div className="header22">
-            <header className="header__middle">
-                <div className="container22">
-                    <div className="row">
+    return ( <
+        div className = "header22" >
+        <
+        header className = "header__middle" >
+        <
+        div className = "container22" >
+        <
+        div className = "row" >
 
-                        {/* Add Logo  */}
-                        <div className="header__middle__logo">
-                            <NavLink exact activeClassName='is-active' to="/">
-                                <img src={logo} alt="logo" style = {{transform:'scale(2)'}}/>
-                            </NavLink>
-                        </div>
+        { /* Add Logo  */ } <
+        div className = "header__middle__logo" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        to = "/" >
+        <
+        img className = "LOGO"
+        src = { logo }
+        alt = "logo"
+        style = {
+            { transform: 'scale(2)' }
+        }
+        /> <
+        /NavLink>  <
+        /div>
 
-                        <div className="header__middle__menus">
-                            <nav className="main-nav " >
+        <
+        div className = "header__middle__menus" >
+        <
+        nav className = "main-nav " >
 
-                                {/* Responsive Menu Button */}
-                                {isResponsiveclose === true ? <>
-                                    <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
-                                </> : <>
-                                    <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
-                                </>}
+        { /* Responsive Menu Button */ } {
+            isResponsiveclose === true ? < >
+                <
+                span className = "menubar__button"
+            style = {
+                { display: 'none' }
+            }
+            onClick = { toggleClass } > < FiXCircle / > < /span>  <
+                />: < >  <
+                span className = "menubar__button"
+            style = {
+                { display: 'none' }
+            }
+            onClick = { toggleClass } > < FiAlignRight / > < /span> </ >
+        }
 
-                                <ul className={boxClass.join(' ')}>
+        <
+        ul className = { boxClass.join(' ') } >
 
-                                    <li className="menu-item" >
-                                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Accueil</NavLink>
-                                    </li>
-                                    <li className="menu-item" >
-                                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/function`}> Fonctionnalités </NavLink>
-                                    </li>
-                                    <li className="menu-item" >
-                                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/registration`}> Inscription </NavLink>
-                                    </li>
-                                    <li className="menu-item" >
-                                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/login`}> Se connecter </NavLink>
-                                    </li>   
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
+        <
+        li className = "menu-item" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/` } > Accueil < /NavLink> </li >
+
+        <
+        li className = "menu-item" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/registration` } > Inscription < /NavLink> </li >
+
+        <
+        li className = "menu-item" >
+        <
+        NavLink exact activeClassName = 'is-active'
+        onClick = { toggleClass }
+        to = { `/login` } > Se connecter < /NavLink> </li >
+        <
+        /ul>  <
+        /nav >  <
+        /div> <
+        /div >  <
+        /div>  <
+        /header >  <
+        /div>
     )
 }
 export default Navbarmenu;
-                                    
-
-
-                                    

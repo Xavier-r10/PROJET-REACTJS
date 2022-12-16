@@ -1,0 +1,53 @@
+.apropos {
+    background-color: #00416a;
+}
+
+.apropos .box-container {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.apropos .box-container .box {
+    width: 21rem;
+    margin: 3rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+}
+
+.apropos .box-container .box h3 {
+    font-size: 1.2rem;
+    background: yellow;
+    color: #fff;
+    border-radius: 2rem;
+    padding: .5rem 2.5rem;
+}
+
+.apropos .box-container .box p {
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.apropos .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
+
+h2 {
+    color: #fff;
+    height: 0.8cm;
+    padding: 50px;
+}

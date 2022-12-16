@@ -1,0 +1,23 @@
+.bg {
+    background-image: url("../../assets/image.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text h1 h2 {
+    padding-top: 30px;
+    margin-top: 25px;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 1.3cm;
+}
+
+.text h2 {
+    color: #00416a;
+    font-style: italic;
+    font-size: 0.9cm;
+}

@@ -11,12 +11,12 @@
 }*/
 
 .row {
-    display: flex;
+    display: flex!important;
     justify-content: space-around;
 }
 
 div .header22 {
-    display: flex;
+    display: flex!important;
     align-items: center;
 }
 
@@ -49,7 +49,7 @@ img {
 }
 
 .navBar .logo img {
-    float: left;
+    float: left!important;
     max-height: 120px;
 }
 
@@ -173,6 +173,10 @@ li {
     .header__middle .active {
         color: rgb(54, 27, 27)!important;
     }
+    .LOGO {
+        position: relative;
+        left: 10px;
+    }
 }
 
 @media (min-width:1260px) {
@@ -201,6 +205,11 @@ li {
 .header__middle__logo img {
     max-width: 207px;
     margin: 17px 0 0 0;
+}
+
+.LOGO {
+    position: relative;
+    left: -10px;
 }
 
 @media(max-width:1260px) {
@@ -278,7 +287,12 @@ li {
         text-align: left;
     }
     .header__middle__logo img {
-        position: relative;
+        position: relative!important;
         top: -12px;
+        left: -100px;
+    }
+    .LOGO {
+        position: relative!important;
+        left: 10px;
     }
 }
